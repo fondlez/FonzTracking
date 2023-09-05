@@ -4,10 +4,10 @@ FonzTracking is an addon for World of Warcraft (2.4.3 client) to reset minimap
 Tracking changes after shapeshifting.
 
 Performing certain shapeshifts, e.g. Druid's Cat Form, will also make an
-expected change in the minimap Tracking type, such as enabling Track Humanoids.
-The purpose of this addon is that after such a forced change on shapeshifting,
-it resets the Tracking back to whatever it was previously if possible or 
-tracking type "None" (empty) otherwise.
+unexpected change in the minimap Tracking type, such as enabling 
+Track Humanoids. The purpose of this addon is that after such a forced change on 
+shapeshifting, it resets the Tracking back to whatever it was previously if 
+possible or tracking type "None" (empty) otherwise.
 
 ## Bonus Features
 - if you select a minimap Tracking type, it should save your selection across 
