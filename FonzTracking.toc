@@ -1,0 +1,11 @@
+## Interface: 20400
+## Title: FonzTracking
+## Notes: Resets minimap Tracking changes after shapeshifting.
+## Author: fondlez
+## Version: 1.0.0
+## X-Website: http://github.com/fondlez
+## X-Category: Interface Enhancements
+## SavedVariablesPerCharacter: FonzTrackingCDB
+## DefaultState: enabled
+
+FonzTracking.lua
