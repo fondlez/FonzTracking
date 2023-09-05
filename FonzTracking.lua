@@ -58,6 +58,7 @@ local FORCED_AURAS = {
 local GetNumTrackingTypes = GetNumTrackingTypes
 local GetTrackingInfo = GetTrackingInfo
 local SetTracking = SetTracking
+local InCombatLockdown = InCombatLockdown
 
 -- Tracking ids can change depending on shapeshift. Using name is more reliable.
 function getTrackingByName(required_name)
@@ -126,11 +127,11 @@ function COMBAT_LOG_EVENT_UNFILTERED(
     dest_guid, dest_name, dest_flags, 
     spell_id, spell_name, spell_school, 
     aura_type, amount, ...)
-  -- In combat
-  if InCombatLockdown() then return end
   -- Not me
   if bit.band(dest_flags, COMBATLOG_OBJECT_AFFILIATION_MASK) 
     ~= COMBATLOG_OBJECT_AFFILIATION_MINE then return end
+  -- In combat
+  if InCombatLockdown() then return end
   -- Not an aura
   if event_type ~= "SPELL_AURA_APPLIED" then return end
   
