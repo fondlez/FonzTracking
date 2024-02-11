@@ -1,4 +1,4 @@
-## Interface: 20400
+## Interface: 30300
 ## Title: FonzTracking
 ## Notes: Resets minimap Tracking changes after shapeshifting.
 ## Author: fondlez
